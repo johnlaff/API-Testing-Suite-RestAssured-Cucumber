@@ -171,25 +171,6 @@ public class TestRunner {
 
 Neste exemplo, `@RunWith(Cucumber.class)` é uma anotação que diz ao JUnit para executar a classe de teste com o runner do Cucumber. `@CucumberOptions` é uma anotação que permite configurar várias opções do Cucumber, como o caminho para os arquivos de feature (`features`), o pacote das classes de steps (`glue`), os plugins a serem usados (`plugin`), etc.
 
-## Explicação de Código Rest Assured e Cucumber
-
-Vamos analisar um exemplo de código que utiliza Rest Assured e Cucumber para testar uma API.
-
-```java
-RestAssured.baseURI = "https://jsonplaceholder.typicode.com/users/1";
-Response response = RestAssured.given().get();
-response.then().statusCode(200);
-response.then().body("id", equalTo(1));
-```
-
-- `RestAssured.baseURI = "https://jsonplaceholder.typicode.com/users/1";` - Aqui, estamos definindo a URL base para as requisições HTTP que serão feitas. Neste caso, estamos apontando para a API JSONPlaceholder, que é uma API de teste gratuita e de uso livre.
-
-- `Response response = RestAssured.given().get();` - Aqui, estamos enviando uma requisição HTTP GET para a URL base que definimos anteriormente. O método `given()` é usado para definir as condições do teste. O método `get()` envia a requisição GET. A resposta da requisição é armazenada na variável `response`.
-
-- `response.then().statusCode(200);` - Aqui, estamos verificando se o código de status da resposta HTTP é 200, que indica uma resposta bem-sucedida.
-
-- `response.then().body("id", equalTo(1));` - Aqui, estamos verificando se o corpo da resposta contém um campo `id` que é igual a 1.
-
 ## Melhores Práticas
 
 Aqui estão algumas melhores práticas para escrever testes de API eficazes:
