@@ -1,4 +1,4 @@
-# Documentação do Projeto de Teste de API com Rest Assured, Cucumber e JUnit
+# Teste de API com Rest Assured, Cucumber e JUnit
 
 Este documento descreve o processo de criação de um projeto de teste de API utilizando Rest Assured, Cucumber e JUnit. O objetivo é fornecer um guia passo a passo para replicar e entender tudo o que foi feito, incluindo explicações detalhadas de cada função usada e exemplos de como e quando elas seriam utilizadas.
 
